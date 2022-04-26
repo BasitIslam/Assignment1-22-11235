@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>My Portfolio</title>
+</head>
+<body>
+	<div class="toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<a href="Assignment.html">Home</a>
+				<a href="Projects.html">Projects</a>
+				<a href="CV.html">My CV</a>
+				<a href="ContactUs.html">Contact</a>
+			</div>
+			<div class="head-content">
+			<img src="mypic.jpg" height="300px" width="300px">
+			<p class="name">Basit Islam</p>
+		</div>
+		</div>
+		<div class="about-section" id="about">
+			<h2>About Me</h2>
+		<p>My Personal details are:</p>
+		<p>Basit Islam, BS Computer Science, Web Developer</p>
+			<p><b>Interests & Hobbies</b><br>
+
+				Volunteering at my local soup kitchen<br>
+				Learning Mandarin<br>
+				Coaching soccer at the local high school<br>
+				Hiking tall mountains<br>
+				<b>Interests</b><br>
+				
+				Playing the piano<br>
+				Blogging about wellness practices for Men<br>
+				Cooking gluten-free recipes<br>
+				Leading a weekly wine-and-women book club<br>
+				<b>Interests and Hobbies</b><br>
+				
+				Volunteering: I regularly volunteer on the weekends at a local animal shelter.<br>
+				Music: I enjoy both listening to and creating music and have played the guitar for 10 years.<br>
+				Traveling: I’ve visited more than 10 places in the last five years.	</p>
+		</div>
+		<br>
+	
+	
+</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".toggle").click(function(){
+			$(".navbar").slideToggle()
+		});
+	});
+
+	$(window).resize(function(){
+		if($(window).width()>768)
+		{
+			$('.navbar').show();
+		}
+		else
+		{
+			$('.navbar').hide();
+		}
+	});
+</script>
+</html>
